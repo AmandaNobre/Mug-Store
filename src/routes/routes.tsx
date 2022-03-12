@@ -1,22 +1,28 @@
-import React from "react"
-import { BrowserRouter, Route, Switch } from "react-router-dom"
+import React from "react";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
-const TheLayout = React.lazy(() => import("../containers/TheLayout"))
+const loading = (
+  <div className="pt-3 text-center">
+    <div className="sk-spinner sk-spinner-pulse"></div>
+  </div>
+);
 
-const Router = () =>{
-    const RoutesFilter = () => {
-        return <Route path="/" component={TheLayout} />
-    }
+const TheLayout = React.lazy(() => import("../containers/TheLayout"));
 
-    return(
-        <BrowserRouter>
-        <React.Suspense fallback="loading">
-            <Switch>
-                <RoutesFilter/>
-            </Switch>
-        </React.Suspense>
-        </BrowserRouter>
-    )
-}
+const Router = () => {
+  const RoutesFilter = () => {
+    return <Route path="/" component={TheLayout} />;
+  };
+
+  return (
+    <BrowserRouter>
+      <React.Suspense fallback={loading}>
+        <Switch>
+          <RoutesFilter />
+        </Switch>
+      </React.Suspense>
+    </BrowserRouter>
+  );
+};
 
 export default Router;

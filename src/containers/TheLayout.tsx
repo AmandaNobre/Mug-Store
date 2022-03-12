@@ -1,10 +1,12 @@
-import React from "react";
-import Home from "../pages/home";
+import { Container } from "react-bootstrap";
+import TheContent from "./TheContent";
 
 const TheLayout = () => {
   return (
     <div>
-      <Home />
+      <Container>
+        <TheContent />
+      </Container>
     </div>
   );
 };

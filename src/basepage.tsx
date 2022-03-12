@@ -1,5 +1,7 @@
 import React from "react";
 
-const routes = [{ path: "/", exact: true, name: "Home", component: "" }];
+const Home = React.lazy(() => import("./pages/Home"));
 
-export default routes;
+const basepage = [{ path: "/", exact: true, name: "Home", component: Home }];
+
+export default basepage;

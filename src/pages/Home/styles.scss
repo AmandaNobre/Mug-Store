@@ -1,0 +1,5 @@
+.gridProdutos {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}

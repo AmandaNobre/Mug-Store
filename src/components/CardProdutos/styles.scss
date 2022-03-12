@@ -1,0 +1,32 @@
+.principal {
+  width: 90%;
+
+  cursor: pointer;
+  img {
+    width: 100%;
+  }
+
+  h5 {
+    margin: 0;
+  }
+}
+
+.linkCompra {
+  display: grid;
+}
+
+.principal:hover {
+  .nomeProduto,
+  h5 {
+    color: var(--primary-color);
+
+    cursor: pointer;
+  }
+}
+
+.divPromocao {
+  background-color: var(--primary-color);
+  color: white;
+
+  padding-left: 5px;
+}
