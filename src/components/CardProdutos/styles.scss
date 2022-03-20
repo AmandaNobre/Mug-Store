@@ -1,5 +1,5 @@
-.principal {
-  width: 90%;
+.principalCardProdutos {
+  padding-right: 10px;
 
   cursor: pointer;
   img {
@@ -11,11 +11,7 @@
   }
 }
 
-.linkCompra {
-  display: grid;
-}
-
-.principal:hover {
+.principalCardProdutos:hover {
   .nomeProduto,
   h5 {
     color: var(--primary-color);
