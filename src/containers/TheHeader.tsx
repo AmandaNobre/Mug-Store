@@ -17,6 +17,7 @@ import NotificationsIcon from "@mui/icons-material/Notifications";
 import MoreIcon from "@mui/icons-material/MoreVert";
 import { BsFillBagFill } from "react-icons/bs";
 import ConfigIcon from "../components/ConfigIcon";
+import InfoIcon from "@mui/icons-material/Info";
 import "./header.scss";
 
 const Search = styled("div")(({ theme }) => ({
@@ -101,8 +102,7 @@ export default function TheHeader() {
       open={isMenuOpen}
       onClose={handleMenuClose}
     >
-      <MenuItem onClick={handleMenuClose}>Minha Conta</MenuItem>
-      <MenuItem onClick={handleMenuClose}>Sair</MenuItem>
+      <MenuItem onClick={handleMenuClose}>Entrar/ Cadastrar</MenuItem>
     </Menu>
   );
 
@@ -137,11 +137,9 @@ export default function TheHeader() {
       </MenuItem>
       <MenuItem>
         <IconButton size="large" aria-label="show 4 new mails" color="inherit">
-          <Badge badgeContent={4} color="error">
-            <ConfigIcon color="black" size="1em">
-              <BsFillBagFill />
-            </ConfigIcon>
-          </Badge>
+          <ConfigIcon color="black" size="1em">
+            <InfoIcon />
+          </ConfigIcon>
         </IconButton>
         <p>Sobre-nós</p>
       </MenuItem>
@@ -172,7 +170,7 @@ export default function TheHeader() {
           >
             Mug Store
           </Typography>
-          <Search>
+          <Search className="desktopSearch">
             <SearchIconWrapper>
               <SearchIcon />
             </SearchIconWrapper>
@@ -209,6 +207,15 @@ export default function TheHeader() {
             </IconButton>
           </Box>
         </Toolbar>
+        <Search className="mobileSearch">
+          <SearchIconWrapper>
+            <SearchIcon />
+          </SearchIconWrapper>
+          <StyledInputBase
+            placeholder="O que você procura?"
+            inputProps={{ "aria-label": "search" }}
+          />
+        </Search>
       </AppBar>
       {renderMobileMenu}
       {renderMenu}

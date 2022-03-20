@@ -2,7 +2,7 @@ import React from "react";
 
 const Home = () => {
     return(
-        <p>AAAAAA</p>
+        <p>Lorem ipsum dolor</p>
     )
 };
 
