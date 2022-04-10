@@ -2,9 +2,13 @@ import "./styles.scss";
 
 const CardIcon = () => {
   return (
-    <div className="principalCardIcon">
-      <i className="fa fa-glasses" />
-      <span>Geek</span>
+    <div className="w-100 principalCardIcon">
+      <div className="cardIcon d-flex">
+        <div className="iconCategoria">
+          <i className="fa fa-book"></i>
+        </div>
+        <span>Geek</span>
+      </div>
     </div>
   );
 };
