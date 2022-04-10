@@ -41,12 +41,12 @@ const Home = () => {
       {/* botões de temas */}
       <h2>Veja canecas por temas</h2>
       <div className="grid">
-        <CardIcon />
-        <CardIcon />
-        <CardIcon />
-        <CardIcon />
-        <CardIcon />
-        <CardIcon />
+        <CardIcon icon="book" title="Geek" />
+        <CardIcon icon="film" title="Cinema" />
+        <CardIcon icon="music" title="Música" />
+        <CardIcon icon="pencil" title="Literatura" />
+        <CardIcon icon="paw" title="Pets" />
+        <CardIcon icon="microphone" title="Humor" />
       </div>
     </div>
   );
