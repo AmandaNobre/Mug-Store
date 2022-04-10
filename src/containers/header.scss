@@ -1,0 +1,37 @@
+.css-hip9hq-MuiPaper-root-MuiAppBar-root {
+  background-color: inherit !important;
+  color: black !important;
+}
+
+@media (min-width: 0px) {
+  .css-1futezt-MuiTypography-root {
+    display: block !important;
+  }
+  .bag {
+    display: block !important;
+  }
+  .css-96uuyl {
+    top: 20% !important;
+  }
+  .desktopSearch {
+    display: none;
+  }
+  .mobileSearch {
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  body{
+    padding-right: 0px !important;
+  }
+}
+
+@media (min-width: 900px) {
+  .desktopSearch {
+    display: flex;
+  }
+  .mobileSearch {
+    display: none;
+  }
+}

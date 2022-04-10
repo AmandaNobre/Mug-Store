@@ -1,13 +1,13 @@
-import { Container } from "react-bootstrap";
-import TheContent from "./TheContent";
+import React from "react";
+import Home from "../pages/Home";
+import TheHeader from "./TheHeader";
 
 const TheLayout = () => {
   return (
-    <div>
-      <Container>
-        <TheContent />
-      </Container>
-    </div>
+    <>
+      <TheHeader />
+      <Home />
+    </>
   );
 };
 
