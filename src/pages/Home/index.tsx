@@ -4,7 +4,7 @@ import CardProdutos from "../../components/CardProdutos";
 import "./styles.scss";
 const Home = () => {
   return (
-    <div>
+    <div className="mt-4">
       {/* banners */}
       <div className="mb-4">
         <div className="d-flex">
